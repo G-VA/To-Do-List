@@ -1,0 +1,27 @@
+<%-include("partials/header.ejs") %>
+
+
+
+
+
+<div class="container">
+    <div class="py-4">
+        <h2 class="mb-3">Work To-Do List</h2>
+    <div class="list-group">
+    <% for (let i = 0; i < workList.length; i++) { %>
+        <label class="list-group-item d-flex gap-3 fade-on-check">
+            <input class="form-check-input flex-shrink-0" type="checkbox" value=""  style="font-size: 1.375em;">
+            <span class="pt-1 form-checked-content">
+              <strong class="white"><%= workList[i].nTask %></strong>
+              <small class="d-block text-body-secondary">
+                <%= workList[i].sTime %> – <%= workList[i].eTime %>
+              </small>
+            </span>
+          </label>
+
+    <% } %>
+    </div>
+</div>
+</div>
+
+    <%-include("partials/footer.ejs") %>

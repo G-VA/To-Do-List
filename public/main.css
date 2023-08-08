@@ -1,0 +1,43 @@
+.fade-on-check {
+    transition: opacity 0.3s ease;
+}
+
+.fade-on-check input:checked ~ .form-checked-content {
+    opacity: 0.5; 
+}
+svg{
+    margin: 5px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Flexbox container for page content */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Push the footer to the bottom */
+  .content {
+    flex: 1;
+  }
+  body {
+    background: linear-gradient(135deg, #003366, #000000);
+    color: white; /* Set text color to contrast with the background */
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: none;
+}
+.white{
+    color: white;
+}
+
+
+
+
